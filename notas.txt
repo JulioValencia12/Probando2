@@ -1,0 +1,42 @@
+// you can also use imports, for example:
+// import java.util.*;
+
+// you can write to stdout for debugging purposes, e.g.
+// System.out.println("this is a debug message");
+
+class Solution {
+    public int solution(int N) {
+        String m = Integer.toBinaryString(N);
+        int cont=0;
+        int cont2=0;
+        int cont3=0;
+        int vb=0;
+        int temp=0;
+        int limit= m.length();
+        for (int i=0; i< limit; i++) {
+            if (m.charAt(i)==0) {temp=0; cont++;}
+                else if (m.charAt(i)==1) {temp=1;} 
+            if (temp == 0 && (i+1)!= limit && m.charAt(i+1)==0) {cont2++;}
+            else {cont3=cont2;} 
+            if (cont2<=cont3) {vb=cont3;cont2=0;}
+            else {vb=cont2;}
+        }
+        if (vb==0) {return 0;}
+        else {return cont;}
+    }
+}
+
+00100001001
+
+gatling scala pruebas desde el back
+qué estamos, qué hicimos ayer y qué hacemos.
+Kelly esta con la diferenciación de cuentas
+Danny faÇade para integración con powiii api ohs 
+
+trello, plural (acceso)
+
+integración de poul(powy?poy?) más de una semana con servidores ->powii
+Buscar proovedores 
+Migrar librerias a scala de http.
+
+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
