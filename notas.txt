@@ -40,3 +40,7 @@ Buscar proovedores
 Migrar librerias a scala de http.
 
 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
+git remote add origin [repository url]
+git remote set-url origin https://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@github.com/JulioValencia12/Probando2.git
+
+lala
